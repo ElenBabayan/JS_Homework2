@@ -4,6 +4,15 @@
 
 //    element does not exist, return -1)․
 
+function solution2() {
+    const num = arr.filter( i => i >= 0);
+    if(!tmp.length) {
+        return -1;
+    }
+    return solution2(num);
+}
+
+
 let flag = false;
 function minimalPositiveElement(arr) {
 
